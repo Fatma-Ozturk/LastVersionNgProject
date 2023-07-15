@@ -1,0 +1,17 @@
+<p>product works!</p>
+//Span ile false olanlar için de span nesnesi oluşturur(kirli kod)
+<br>
+<ul>
+	<span *ngFor="let product of products">
+		<li *ngIf="product.avaible">{{product.productName}}</li>
+	</span>
+</ul>
+<br> <hr> <br>
+//ng-container ile sadece true olanlar için li nesnesi oluştururur(temiz kod)
+<br>
+<ul>
+	<ng-container *ngFor="let product of products">
+		<li *ngIf="product.avaible">{{product.productName}}</li>
+	</ng-container> 
+</ul>
+ 

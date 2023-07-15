@@ -1,0 +1,16 @@
+<p>home works!</p>
+<div style="background-color: antiquewhite;">
+	<ng-content></ng-content>
+</div>
+
+<ng-content select="header"></ng-content>
+<ng-content select="body"></ng-content>
+<ng-content select="footer"></ng-content>
+
+<table>
+	<tr>
+		<td><ng-content select=".solMenu"></ng-content></td>
+		<td><ng-content select=".ortaMenu"></ng-content></td>
+		<td><ng-content select=".sagMenu"></ng-content></td>
+	</tr>
+</table>
