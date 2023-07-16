@@ -69,9 +69,41 @@
 <ng-template #parentTemplate>
   Parent Template
 </ng-template>
-<app-child [childTemplate]="parentTemplate">
+<app-child [childTemplate]="parentTemplate"></app-child>
 
-</app-child>
+<br> <hr> <br>
+<app-child #child></app-child>
+
+
+<br> <hr> <br>
+<input type="text" #h appExample [(ngModel)]="fatma">App Component>
+
+<br> <hr> <br>
+<div #div>1</div>
+<div #div>2</div>
+<div #div>3</div>
+
+<br> <hr> <br>
+<app-child #children></app-child>
+<app-child2 #children></app-child2>
+
+<br> <hr> <br>
+<p #p>A</p>
+<p #p *ngIf="visible">B</p>
+<p #p *ngIf="!visible">C</p>
+
+<button (click)="showHide()">show/hide</button>
+
+<br> <hr> <br>
+<div #rend>Hello Renderer2</div>
+
+<br> <hr> <br>
+<app-child2>
+  <input type="text" #exampleContent>
+</app-child2>
+<br>
+
+
 
 
 
